@@ -118,11 +118,10 @@ output$dlgenmap <- downloadHandler(
   }
 )
 
-# data filtered data
+# download filtered data
 output$dlgendat <- downloadHandler(
   filename = function(){'gendat.csv'},
   content = function(file){
-    browser()
     crds <- st_coordinates(gendat()) %>% 
       data.frame
     names(crds) <- c('pr2_longitude', 'pr2_latitude')
@@ -160,6 +159,6 @@ column(12,
 column(12, 
   column(4, downloadButtonRmd('dlgentab', 'Download table'))
   )
-shiny::dataTableOutput('gentab')
+dataTableOutput('gentab')
 ```
 

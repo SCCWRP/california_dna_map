@@ -1,5 +1,5 @@
 ---
-title: "GenBank California"
+title: "California DNA map"
 author: ""
 output: 
   html_document

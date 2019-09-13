@@ -7,7 +7,6 @@ runtime: shiny
 ---
 
 ```{r setup, message = F, warning = F, echo = F}
-library(tidyverse)
 library(knitr)
 library(mapview)
 library(shiny)
@@ -15,6 +14,7 @@ library(leaflet)
 library(shinyWidgets)
 library(sf)
 library(here)
+library(tidyverse)
 
 # global chunk options
 opts_chunk$set(warning = FALSE, message = FALSE, eval = T, echo = F)

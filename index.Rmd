@@ -45,7 +45,7 @@ column(width = 12,
   column(width = 4,
         
         # select metric type
-        selectInput("fltby", "Select taxonomic filter type:", choices = c('kingdom', 'supergroup', 'division', 'class', 'order', 'family', 'genus', 'species', 'gene', 'gb_collection_date', 'gb_collected_by', 'pr2_sample_type'), selected = 'supergroup')
+        selectInput("fltby", "Select taxonomic filter type:", choices = c('kingdom', 'supergroup', 'division', 'class', 'order', 'family', 'genus', 'species', 'gene'), selected = 'supergroup')
   
   ),
   
